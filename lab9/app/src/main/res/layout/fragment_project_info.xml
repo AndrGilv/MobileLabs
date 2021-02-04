@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ProjectInfoFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:id="@+id/projectNameTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:text="Название проекта"
+            app:layout_constraintBottom_toBottomOf="@+id/avatarImageView"
+            app:layout_constraintEnd_toStartOf="@+id/avatarImageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/avatarImageView" />
+
+        <ImageView
+            android:id="@+id/avatarImageView"
+            android:layout_width="120dp"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+
+        <TextView
+            android:id="@+id/projectDescriptionTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/avatarImageView" />
+
+        <TextView
+            android:id="@+id/projectURLtextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:autoLink="phone|web"
+            android:inputType="textUri"
+            android:text="project url"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/projectDescriptionTextView" />
+
+        <TextView
+            android:id="@+id/watchersCountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="wotchers count"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/projectURLtextView" />
+
+        <TextView
+            android:id="@+id/sizeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/watchersCountTextView" />
+
+        <TextView
+            android:id="@+id/languageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="language"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sizeTextView" />
+
+        <TextView
+            android:id="@+id/createdAtTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="created at"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/languageTextView" />
+
+        <TextView
+            android:id="@+id/updatedAtTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="updated at"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/createdAtTextView" />
+
+        <TextView
+            android:id="@+id/licenseTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="license"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/updatedAtTextView" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--<androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ProjectInfoFragment">
+
+        &lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;
+        <TextView
+            android:id="@+id/projectNameTextView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:inputType="textMultiLine"
+            android:text="Название проекта"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
+            app:layout_constraintEnd_toStartOf="@+id/avatarImageView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/avatarImageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
+            app:layout_constraintDimensionRatio="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.15" />
+
+        <TextView
+            android:id="@+id/projectInfoTextView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:inputType="textMultiLine"
+            android:text="Информация по проекту"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>-->
+</ScrollView>

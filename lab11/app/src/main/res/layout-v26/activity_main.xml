@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <!-- <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сменить время года"
+        android:onClick="buttonChangeSeason"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Поделится"
+        android:onClick="buttonShare"/>-->
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:max="30"
+        android:min="1"
+        android:progress="10" />
+
+    <com.example.lab11.MyDrawSurface
+        android:id="@+id/draw_cube"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <!--<com.example.lab11.DrawSurface
+        android:id="@+id/draw_ball"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.example.lab11.DrawView
+        android:id="@+id/draw_tree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>-->
+</LinearLayout>

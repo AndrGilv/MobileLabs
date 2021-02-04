@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">lab2 8И7А Гилёв</string>
+    <string name="button_add">Сложить два числа</string>
+    <string name="edit_hint">Введите число</string>
+    <string name="operation_result">Результат операции: %1$f</string>
+    <string name="result_no">Здесь будет результат…</string>
+    <string name="button_subtraction">Вычетание</string>
+    <string name="button_divide">Деление</string>
+    <string name="button_multiply">Умножение</string>
+    <string name="button_mod">Остаток от деления</string>
+    <string name="infinite_result">Бесконечность не предел</string>
+</resources>
